@@ -22,7 +22,7 @@ btnTambah.on('click', function() {
     const containerTeks = $("<div></div>");
     containerTeks.css('flex', '1')
 
-    let spanTugas = $('span></span>');
+    let spanTugas = $('<span></span>');
     spanTugas.html(teksTugas);
 
     let spanTanggal = $('<small></small>');
