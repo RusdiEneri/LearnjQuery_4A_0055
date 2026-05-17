@@ -35,24 +35,24 @@ btnTambah.on('click', function() {
 
     const labelStatus = $("span");
     labelStatus.html = "Progress";
-    labelStatus.className = "status-label";
+    labelStatus.addClass = "status-label";
     listBaru.append(labelStatus);
 
     checkbox.on("change", function(){
         if(this.checked){
             labelStatus.html = "Done";
-            labelStatus.className = "status-done";
+            labelStatus.addClass = "status-done";
             containerTeks.addClass("task-done");
         } else {
             labelStatus.html = "Progress";
-            labelStatus.className = "status-progress";
+            labelStatus.addClass = "status-progress";
             containerTeks.removeClass("task-done");
         }
     });
 
     const btnEdit = $("button");
     btnEdit.html = "Edit";
-    btnEdit.className = "btn-edit";
+    btnEdit.addClass = "btn-edit";
 
     btnEdit.on("click", function(){
         const newTask = prompt("Edit nama tugas:", spanTugas.html);
@@ -64,7 +64,7 @@ btnTambah.on('click', function() {
 
     const btnDelete = $("button");
     btnDelete.html = "Delete";
-    btnDelete.className = "btn-delete";
+    btnDelete.addClass = "btn-delete";
 
     btnDelete.on("click", function(){
         if(confirm("Hapus tugas ini?")){
