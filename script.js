@@ -84,7 +84,7 @@ btnTambah.on('click', function() {
         }
     })
 
-    inputTugas.value = "";
-    inputTanggal.value = "";
+    inputTugas.val("");
+    inputTanggal.val("");
 
 });
