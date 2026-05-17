@@ -78,9 +78,9 @@ btnTambah.on('click', function() {
     const warnaBaru = $('li');
     warnaBaru.each(function(index) {
         if (index % 2 === 0) {
-            $(item).css('color', 'blue');
+            $(this).css('color', 'blue');
         } else {
-            $(item).css('color', 'green');
+            $(this).css('color', 'green');
         }
     })
 
