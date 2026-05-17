@@ -19,13 +19,13 @@ btnTambah.on('click', function() {
     checkbox.type = "checkbox";
     listBaru.append(checkbox);
 
-    const containerTeks = document.createElement("div");
+    const containerTeks = $("div");
     containerTeks.style.flex = "1";
 
-    let spanTugas = document.createElement('span');
+    let spanTugas = $('span');
     spanTugas.innerHTML = teksTugas;
 
-    let spanTanggal = document.createElement('small');
+    let spanTanggal = $('small');
     spanTanggal.innerHTML =  ` (${teksTanggal}) `;
     spanTanggal.style.display = "block";
 
@@ -33,7 +33,7 @@ btnTambah.on('click', function() {
     containerTeks.appendChild(spanTanggal);
     listBaru.appendChild(containerTeks);
 
-    const labelStatus = document.createElement("span");
+    const labelStatus = $("span");
     labelStatus.innerHTML = "Progress";
     labelStatus.className = "status-label";
     listBaru.appendChild(labelStatus);
@@ -50,7 +50,7 @@ btnTambah.on('click', function() {
         }
     });
 
-    const btnEdit = document.createElement("button");
+    const btnEdit = $("button");
     btnEdit.innerHTML = "Edit";
     btnEdit.className = "btn-edit";
 
@@ -62,7 +62,7 @@ btnTambah.on('click', function() {
     };
     listBaru.appendChild(btnEdit);
 
-    const btnDelete = document.createElement("button");
+    const btnDelete = $("button");
     btnDelete.innerHTML = "Delete";
     btnDelete.className = "btn-delete";
 
