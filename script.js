@@ -13,11 +13,11 @@ btnTambah.on('click', function() {
         return;
     }
 
-    let listBaru = document.createElement('li');
+    let listBaru = $('<li></li>');
 
-    let checkbox = document.createElement("input");
+    let checkbox = $('input')
     checkbox.type = "checkbox";
-    listBaru.appendChild(checkbox);
+    listBaru.append(checkbox);
 
     const containerTeks = document.createElement("div");
     containerTeks.style.flex = "1";
