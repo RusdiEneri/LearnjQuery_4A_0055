@@ -38,11 +38,11 @@ btnTambah.on('click', function() {
     labelStatus.className = "status-label";
     listBaru.append(labelStatus);
 
-    checkbox.addEventListener("change", function(){
+    checkbox.on("change", function(){
         if(this.checked){
             labelStatus.html = "Done";
             labelStatus.className = "status-done";
-            containerTeks.classList.add("task-done");
+            containerTeks.addClass()("task-done");
         } else {
             labelStatus.html = "Progress";
             labelStatus.className = "status-progress";
