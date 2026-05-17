@@ -29,14 +29,14 @@ btnTambah.on('click', function() {
     spanTanggal.html =  ` (${teksTanggal}) `;
     spanTanggal.style.display = "block";
 
-    containerTeks.appendChild(spanTugas);
-    containerTeks.appendChild(spanTanggal);
-    listBaru.appendChild(containerTeks);
+    containerTeks.append(spanTugas);
+    containerTeks.append(spanTanggal);
+    listBaru.append(containerTeks);
 
     const labelStatus = $("span");
     labelStatus.html = "Progress";
     labelStatus.className = "status-label";
-    listBaru.appendChild(labelStatus);
+    listBaru.append(labelStatus);
 
     checkbox.addEventListener("change", function(){
         if(this.checked){
@@ -60,7 +60,7 @@ btnTambah.on('click', function() {
             spanTugas.html = newTask;           
         }
     };
-    listBaru.appendChild(btnEdit);
+    listBaru.append(btnEdit);
 
     const btnDelete = $("button");
     btnDelete.html = "Delete";
@@ -71,9 +71,9 @@ btnTambah.on('click', function() {
             listBaru.remove();
         }
     };
-    listBaru.appendChild(btnDelete);
+    listBaru.append(btnDelete);
 
-    daftarTugas.appendChild(listBaru);
+    daftarTugas.append(listBaru);
 
     const warnaBaru = document.querySelectorAll('li');
     warnaBaru.forEach((item, index) => {
