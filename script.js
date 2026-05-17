@@ -25,7 +25,7 @@ btnTambah.on('click', function() {
     let spanTugas = $('span></span>');
     spanTugas.html(teksTugas);
 
-    let spanTanggal = $('#small');
+    let spanTanggal = $('<small></small>');
     spanTanggal.html(` (${teksTanggal}) `);
     spanTanggal.css('display', 'block');
 
@@ -33,7 +33,7 @@ btnTambah.on('click', function() {
     containerTeks.append(spanTanggal);
     listBaru.append(containerTeks);
 
-    const labelStatus = $("#span");
+    const labelStatus = $("<span></span>");
     labelStatus.html("Progress");
     labelStatus.addClass("status-label");
     listBaru.append(labelStatus);
@@ -50,19 +50,19 @@ btnTambah.on('click', function() {
         }
     });
 
-    const btnEdit = $("button");
+    const btnEdit = $("<button></button>");
     btnEdit.html("Edit");
     btnEdit.addClass("btn-edit");
 
     btnEdit.on("click", function(){
-        const newTask = prompt("Edit nama tugas:", spanTugas.html);
+        const newTask = prompt("Edit nama tugas:", spanTugas.html());
         if(newTask !== null && newTask.trim() !== ""){
-            spanTugas.html = newTask;           
+            spanTugas.html(newTask);           
         }
     });
     listBaru.append(btnEdit);
 
-    const btnDelete = $("button");
+    const btnDelete = $("<button></button>");
     btnDelete.html("Delete");
     btnDelete.addClass("btn-delete");
 
