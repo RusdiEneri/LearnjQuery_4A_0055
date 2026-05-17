@@ -15,7 +15,7 @@ btnTambah.on('click', function() {
 
     let listBaru = $('<li></li>');
 
-    let checkbox = $('#input')
+    let checkbox = $('<input>')
     checkbox.attr('type', 'checkbox');
     listBaru.append(checkbox);
 
