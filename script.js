@@ -42,7 +42,7 @@ btnTambah.on('click', function() {
         if(this.checked){
             labelStatus.html = "Done";
             labelStatus.className = "status-done";
-            containerTeks.addClass()("task-done");
+            containerTeks.addClass("task-done");
         } else {
             labelStatus.html = "Progress";
             labelStatus.className = "status-progress";
