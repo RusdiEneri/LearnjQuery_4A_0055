@@ -63,8 +63,8 @@ btnTambah.on('click', function() {
     listBaru.append(btnEdit);
 
     const btnDelete = $("button");
-    btnDelete.html = "Delete";
-    btnDelete.addClass = "btn-delete";
+    btnDelete.html("Delete");
+    btnDelete.addClass("btn-delete");
 
     btnDelete.on("click", function(){
         if(confirm("Hapus tugas ini?")){
