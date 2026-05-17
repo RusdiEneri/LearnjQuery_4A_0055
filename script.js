@@ -23,10 +23,10 @@ btnTambah.on('click', function() {
     containerTeks.style.flex = "1";
 
     let spanTugas = $('span');
-    spanTugas.innerHTML = teksTugas;
+    spanTugas.html = teksTugas;
 
     let spanTanggal = $('small');
-    spanTanggal.innerHTML =  ` (${teksTanggal}) `;
+    spanTanggal.html =  ` (${teksTanggal}) `;
     spanTanggal.style.display = "block";
 
     containerTeks.appendChild(spanTugas);
@@ -34,36 +34,36 @@ btnTambah.on('click', function() {
     listBaru.appendChild(containerTeks);
 
     const labelStatus = $("span");
-    labelStatus.innerHTML = "Progress";
+    labelStatus.html = "Progress";
     labelStatus.className = "status-label";
     listBaru.appendChild(labelStatus);
 
     checkbox.addEventListener("change", function(){
         if(this.checked){
-            labelStatus.innerHTML = "Done";
+            labelStatus.html = "Done";
             labelStatus.className = "status-done";
             containerTeks.classList.add("task-done");
         } else {
-            labelStatus.innerHTML = "Progress";
+            labelStatus.html = "Progress";
             labelStatus.className = "status-progress";
             containerTeks.classList.remove("task-done");
         }
     });
 
     const btnEdit = $("button");
-    btnEdit.innerHTML = "Edit";
+    btnEdit.html = "Edit";
     btnEdit.className = "btn-edit";
 
     btnEdit.onclick = function(){
-        const newTask = prompt("Edit nama tugas:", spanTugas.innerHTML);
+        const newTask = prompt("Edit nama tugas:", spanTugas.html);
         if(newTask !== null && newTask.trim() !== ""){
-            spanTugas.innerHTML = newTask;           
+            spanTugas.html = newTask;           
         }
     };
     listBaru.appendChild(btnEdit);
 
     const btnDelete = $("button");
-    btnDelete.innerHTML = "Delete";
+    btnDelete.html = "Delete";
     btnDelete.className = "btn-delete";
 
     btnDelete.onclick = function(){
