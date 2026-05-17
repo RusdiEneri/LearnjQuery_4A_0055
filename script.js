@@ -8,7 +8,7 @@ btnTambah.on('click', function() {
     let teksTugas = inputTugas.val();
     let teksTanggal = inputTanggal.val();
     
-    if (teksTugas === '' || teksTanggal === '') {
+    if (teksTugas.trim() === '' || teksTanggal === '') {
         alert('Nama tugas dan tanggalnya harus diisi!');
         return;
     }
