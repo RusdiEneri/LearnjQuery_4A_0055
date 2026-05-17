@@ -76,7 +76,7 @@ btnTambah.on('click', function() {
     daftarTugas.append(listBaru);
 
     const warnaBaru = $('li');
-    warnaBaru.each((item, index) => {
+    warnaBaru.each(function(index) {
         if (index % 2 === 0) {
             $(item).css('color', 'blue');
         } else {
