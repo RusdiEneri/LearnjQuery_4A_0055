@@ -1,0 +1,110 @@
+h1 {
+    text-align: center;
+    color: #4338ca;
+}
+
+.form {
+    display: flex;
+    gap: 8px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+button {
+    padding: 10px 14px;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4338ca;
+}
+
+li {
+    margin-top: 10px;
+    background: #f8fafc;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hapus {
+    background: #ef4444;
+}
+
+.hapus:hover {
+    background: #dc2626;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+.checkbox:checked + .teks {
+    text-decoration: line-through;
+    color: #6b7280;
+}
+
+.teks {
+    flex: 1;
+}
+
+.status-label, .status-progress {
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: #fef9c3;
+    color: #92400e;
+    align-self: center;
+}
+
+.status-done {
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: #dcfce7;
+    color: #166534;
+    align-self: center;
+}
+
+.task-done span {
+    text-decoration: line-through;
+    color: #9ca3af;
+}
+
+.btn-edit {
+    background: #3b82f6;
+    color: white;
+    border: none;   
+    padding: 5px 10px;
+    border-radius: 4px; 
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.btn-edit:hover {
+    background: #d97706;
+}
+
+.btn-delete {
+    background: #ef4444;
+    color: white;
+    border: none;   
+    padding: 5px 10px;
+    border-radius: 4px; 
+    cursor: pointer;
+    margin-left: 5px;
+} 
+
+.btn-delete:hover {
+    background: #dc2626;
+}
