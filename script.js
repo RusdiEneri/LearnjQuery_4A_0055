@@ -3,6 +3,15 @@ const btnTambah = document.getElementById('btnTambah');
 const daftarTugas = document.getElementById('daftarTugas');
 const inputTanggal = document.getElementById('inputTanggal'); //baru
 
+$(document).ready(function(){
+    $('#btnTambah').on('click',function(){
+        let teksTugas = $('#inputTugas').val();
+        let teksTanggal = $('#inputTanggal').val();
+    });
+
+
+});
+
 btnTambah.addEventListener('click', function() {
 
     let teksTugas = inputTugas.value;
