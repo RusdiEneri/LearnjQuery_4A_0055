@@ -3,7 +3,7 @@ const btnTambah = $('#btnTambah');
 const daftarTugas = $('#daftarTugas');
 const inputTanggal = $('#inputTanggal');
 
-btnTambah.addEventListener('click', function() {
+btnTambah.on('click', function() {
 
     let teksTugas = inputTugas.val();
     let teksTanggal = inputTanggal.val();
