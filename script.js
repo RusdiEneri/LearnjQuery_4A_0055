@@ -19,7 +19,7 @@ btnTambah.on('click', function() {
     checkbox.attr('type', 'checkbox');
     listBaru.append(checkbox);
 
-    const containerTeks = $("#div");
+    const containerTeks = $("<div></div>");
     containerTeks.css('flex', '1')
 
     let spanTugas = $('#span');
