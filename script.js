@@ -46,7 +46,7 @@ btnTambah.on('click', function() {
         } else {
             labelStatus.html = "Progress";
             labelStatus.className = "status-progress";
-            containerTeks.classList.remove("task-done");
+            containerTeks.removeClass("task-done");
         }
     });
 
