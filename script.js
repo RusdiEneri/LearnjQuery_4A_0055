@@ -15,19 +15,19 @@ btnTambah.on('click', function() {
 
     let listBaru = $('<li></li>');
 
-    let checkbox = $('input')
+    let checkbox = $('#input')
     checkbox.type = "checkbox";
     listBaru.append(checkbox);
 
-    const containerTeks = $("div");
+    const containerTeks = $("#div");
     containerTeks.css('flex', '1')
 
-    let spanTugas = $('span');
+    let spanTugas = $('#span');
     spanTugas.html = teksTugas;
 
-    let spanTanggal = $('small');
+    let spanTanggal = $('#small');
     spanTanggal.html =  ` (${teksTanggal}) `;
-    spanTanggal.style.display = "block";
+    spanTanggal.css('display', 'block');
 
     containerTeks.append(spanTugas);
     containerTeks.append(spanTanggal);
