@@ -23,36 +23,36 @@ btnTambah.on('click', function() {
     containerTeks.css('flex', '1')
 
     let spanTugas = $('#span');
-    spanTugas.html = teksTugas;
+    spanTugas.html(teksTugas);
 
     let spanTanggal = $('#small');
-    spanTanggal.html =  ` (${teksTanggal}) `;
+    spanTanggal.html(` (${teksTanggal}) `);
     spanTanggal.css('display', 'block');
 
     containerTeks.append(spanTugas);
     containerTeks.append(spanTanggal);
     listBaru.append(containerTeks);
 
-    const labelStatus = $("span");
-    labelStatus.html = "Progress";
-    labelStatus.addClass = "status-label";
+    const labelStatus = $("#span");
+    labelStatus.html("Progress");
+    labelStatus.addClass("status-label");
     listBaru.append(labelStatus);
 
     checkbox.on("change", function(){
         if($(this).is(':checked')){
-            labelStatus.html = "Done";
-            labelStatus.addClass = "status-done";
+            labelStatus.html("Done");
+            labelStatus.addClass("status-done");
             containerTeks.addClass("task-done");
         } else {
-            labelStatus.html = "Progress";
-            labelStatus.addClass = "status-progress";
+            labelStatus.html("Progress");
+            labelStatus.addClass("status-progress");
             containerTeks.removeClass("task-done");
         }
     });
 
     const btnEdit = $("button");
-    btnEdit.html = "Edit";
-    btnEdit.addClass = "btn-edit";
+    btnEdit.html("Edit");
+    btnEdit.addClass("btn-edit");
 
     btnEdit.on("click", function(){
         const newTask = prompt("Edit nama tugas:", spanTugas.html);
