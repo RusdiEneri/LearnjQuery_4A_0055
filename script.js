@@ -76,7 +76,7 @@ btnTambah.on('click', function() {
     daftarTugas.append(listBaru);
 
     const warnaBaru = document.querySelectorAll('li');
-    warnaBaru.forEach((item, index) => {
+    warnaBaru.each((item, index) => {
         if (index % 2 === 0) {
             item.style.color = "blue";
         } else {
