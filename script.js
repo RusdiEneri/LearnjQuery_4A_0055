@@ -20,7 +20,7 @@ btnTambah.on('click', function() {
     listBaru.append(checkbox);
 
     const containerTeks = $("div");
-    containerTeks.style.flex = "1";
+    containerTeks.css('flex', '1')
 
     let spanTugas = $('span');
     spanTugas.html = teksTugas;
@@ -54,23 +54,23 @@ btnTambah.on('click', function() {
     btnEdit.html = "Edit";
     btnEdit.className = "btn-edit";
 
-    btnEdit.onclick = function(){
+    btnEdit.on("click", function(){
         const newTask = prompt("Edit nama tugas:", spanTugas.html);
         if(newTask !== null && newTask.trim() !== ""){
             spanTugas.html = newTask;           
         }
-    };
+    });
     listBaru.append(btnEdit);
 
     const btnDelete = $("button");
     btnDelete.html = "Delete";
     btnDelete.className = "btn-delete";
 
-    btnDelete.onclick = function(){
+    btnDelete.on("click", function(){
         if(confirm("Hapus tugas ini?")){
             listBaru.remove();
         }
-    };
+    });
     listBaru.append(btnDelete);
 
     daftarTugas.append(listBaru);
