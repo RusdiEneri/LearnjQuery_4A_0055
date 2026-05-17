@@ -39,7 +39,7 @@ btnTambah.on('click', function() {
     listBaru.append(labelStatus);
 
     checkbox.on("change", function(){
-        if(this.checked){
+        if($(this).is(':checked')){
             labelStatus.html = "Done";
             labelStatus.addClass = "status-done";
             containerTeks.addClass("task-done");
