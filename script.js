@@ -75,12 +75,12 @@ btnTambah.on('click', function() {
 
     daftarTugas.append(listBaru);
 
-    const warnaBaru = document.querySelectorAll('li');
+    const warnaBaru = $('li');
     warnaBaru.each((item, index) => {
         if (index % 2 === 0) {
-            item.style.color = "blue";
+            $(item).css('color', 'blue');
         } else {
-            item.style.color = "green";
+            $(item).css('color', 'green');
         }
     })
 
