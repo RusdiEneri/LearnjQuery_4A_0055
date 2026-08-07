@@ -13,9 +13,9 @@
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Kepercayaan rakyatlah yang membuatku terus hidup. ❞</i>
+  <i>❝ Penglihatan bukanlah apa yang kau lihat, tapi (objek) gambar yang otakmu pahami. Pandangan kita tergantung oleh akal sehat kita. Dalam keadaan normal, manusia tidak bisa melihat diluar kotak mereka. ❞</i>
   <br/>
-  <sub>— <b>Ortfiné Fredericka von Eylstadt</b> · <i>Shuumatsu no Izetta</i></sub>
+  <sub>— <b>Touko Aozaki</b> · <i>Kara no Kyoukai 1: Fukan Fuukei</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
