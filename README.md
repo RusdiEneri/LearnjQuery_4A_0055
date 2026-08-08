@@ -13,9 +13,9 @@
   <br/>
   <img src="https://img.shields.io/badge/✦%20Quote%20of%20the%20Day%20✦-7c3aed?style=flat-square&labelColor=1a1a2e" />
   <br/><br/>
-  <i>❝ Waktu-waktu tanpa dirimu sungguh membuatku sangat kesepian. Hanya sosokmulah yang dapat meniupkan hawa kehidupan dalam tubuhku. ❞</i>
+  <i>❝ Untuk membuat manga harus pintar. Paling tidak, kau butuh kepintaran dan pikiran rasional. Tapi aku tak berpikir jika belajar sama dengan pintar. ❞</i>
   <br/>
-  <sub>— <b>Soushi Miketsukami</b> · <i>Inu x Boku SS</i></sub>
+  <sub>— <b>Akito Takagi</b> · <i>Bakuman.</i></sub>
   <br/><br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6&height=2&width=60%" />
 </div>
